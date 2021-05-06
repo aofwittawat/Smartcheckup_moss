@@ -1,0 +1,114 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="container mt-5">
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="HT">
+            <label class="form-check-label" for="HT">
+              โรคความดันโลหิตสูง
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="DM">
+            <label class="form-check-label" for="DM">
+              โรคเบาหวาน
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="DLP">
+            <label class="form-check-label" for="DLP">
+              ไขมันในเลือดสูง"
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="hepatitis">
+            <label class="form-check-label" for="hepatitis">
+              โรคตับอักเสบ ไขมันเกาะตับ หรือ ตับแข็ง
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="chronic_hepatitis">
+            <label class="form-check-label" for="chronic_hepatitis">
+              ตับอ่อนอักเสบเรื้อรัง
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="osteoporosis">
+            <label class="form-check-label" for="osteoporosis">
+              โรคกระดูกพรูน
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="allergy">
+            <label class="form-check-label" for="allergy">
+              โรคภูมแพ้หรือหอบหืด
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="CVS">
+            <label class="form-check-label" for="CVS">
+              โรคหัวใจขาดเลือด
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="renal_stone">
+            <label class="form-check-label" for="renal_stone">
+              โรคนิ่วในไต
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="cancer">
+            <label class="form-check-label" for="cancer">
+              โรคมะเร็ง
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="CA_breast">
+            <label class="form-check-label" for="CA_breast">
+              โรคมะเร็งเต้านม
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="CA_ovary">
+            <label class="form-check-label" for="CA_ovary">
+              โรคมะเร็งรังไข่
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="CA_cervix">
+            <label class="form-check-label" for="CA_cervix">
+              โรคมะเร็งปากมดลูก
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="CA_GI">
+            <label class="form-check-label" for="CA_GI">
+              โรคมะเร็งลำไส้ หรือ กระเพาะอาหาร
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="CA_liver">
+            <label class="form-check-label" for="CA_liver">
+              โรคมะเร็งตับ
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="CA_pancreas">
+            <label class="form-check-label" for="CA_pancreas">
+              โรคมะเร็งตับอ่อน
+            </label>
+        </div>
+        <div class="form-check my-3">
+            <input class="form-check-input" type="checkbox" value="" id="CA_prostate">
+            <label class="form-check-label" for="CA_prostate">
+              โรคมะเร็งต่อมลูกหมาก
+            </label>
+        </div>
+        <button type="submit" class="btn btn-success">Result</button>
+        
+    </div>
+</form>
+
+{% endblock %}
