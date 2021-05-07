@@ -20,26 +20,27 @@ class UserDetail(models.Model):
 
 
 class CheckUp(models.Model):
-    userdetail = models.ForeignKey(
-        UserDetail, on_delete=models.CASCADE,null=True, blank=True)
-    HT = models.BooleanField(default=False,null=True, blank=True)
-    DM = models.BooleanField(default=False,null=True, blank=True)
-    DLP = models.BooleanField(default=False,null=True, blank=True)
-    hepatitis = models.BooleanField(default=False,null=True, blank=True)
-    chronic_hepatitis = models.BooleanField(default=False,null=True, blank=True)
-    osteoporosis = models.BooleanField(default=False,null=True, blank=True)
-    allergy = models.BooleanField(default=False,null=True, blank=True)
-    CVS = models.BooleanField(default=False,null=True, blank=True)
-    renal_stone = models.BooleanField(default=False,null=True, blank=True)
-    cancer = models.BooleanField(default=False,null=True, blank=True)
-    CA_breast = models.BooleanField(default=False,null=True, blank=True)
-    CA_ovary = models.BooleanField(default=False,null=True, blank=True)
-    CA_cervix = models.BooleanField(default=False,null=True, blank=True)
-    CA_GI = models.BooleanField(default=False,null=True, blank=True)
-    CA_liver = models.BooleanField(default=False,null=True, blank=True)
-    CA_pancreas = models.BooleanField(default=False,null=True, blank=True)
-    CA_others = models.BooleanField(default=False,null=True, blank=True)
-    CA_prostate = models.BooleanField(default=False,null=True, blank=True)
-
-   
-   
+    userdetail = models.ForeignKey(UserDetail,
+                                   on_delete=models.CASCADE,
+                                   null=True,
+                                   blank=True)
+    HT = models.BooleanField(default=False, null=True, blank=True)
+    DM = models.BooleanField(default=False, null=True, blank=True)
+    DLP = models.BooleanField(default=False, null=True, blank=True)
+    hepatitis = models.BooleanField(default=False, null=True, blank=True)
+    chronic_hepatitis = models.BooleanField(default=False,
+                                            null=True,
+                                            blank=True)
+    osteoporosis = models.BooleanField(default=False, null=True, blank=True)
+    allergy = models.BooleanField(default=False, null=True, blank=True)
+    CVS = models.BooleanField(default=False, null=True, blank=True)
+    renal_stone = models.BooleanField(default=False, null=True, blank=True)
+    cancer = models.BooleanField(default=False, null=True, blank=True)
+    CA_breast = models.BooleanField(default=False, null=True, blank=True)
+    CA_ovary = models.BooleanField(default=False, null=True, blank=True)
+    CA_cervix = models.BooleanField(default=False, null=True, blank=True)
+    CA_GI = models.BooleanField(default=False, null=True, blank=True)
+    CA_liver = models.BooleanField(default=False, null=True, blank=True)
+    CA_pancreas = models.BooleanField(default=False, null=True, blank=True)
+    CA_others = models.BooleanField(default=False, null=True, blank=True)
+    CA_prostate = models.BooleanField(default=False, null=True, blank=True)
